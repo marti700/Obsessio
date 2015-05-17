@@ -1,3 +1,7 @@
 .offer-detail{
     color: white;
 }
+#conteneur-image, #offre-resume{
+    float: left;
+    margin-right: 3%;
+}
