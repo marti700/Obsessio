@@ -7,17 +7,20 @@
 
     <title>La Voyage Agence</title>
     <link href="./bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./stylesheets/lightbox.css" rel="stylesheet">
     <script src="./scripts/jquery-1.11.3.min.js"></script>
     <script src = ./bootstrap-3.3.4-dist/js/bootstrap.min.js></script>
+    <script src= "./scripts/ShowOffer.js"></script>
 </head>
 <body>
-    <!--PAGE HEADER--> 
+
+    <!--PAGE HEADER-->
     <div class="page-header">
         <h1> La meilleure agence de Voyage </h1>
     </div>
 
     <!--CAROUSEL-->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel", style="height:90%;width:65%;margin-left:15%">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel", style="height:90%;width:58%;margin-left:17%">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -62,14 +65,18 @@
       </a>
     </div>
 
+
     <!-- OFFERS-->
    <h1>Nos offres</h1>
+
+    <div id="lightbox-container" hidden></div>
+
     <div id="offers-container">
         <table id="offers-table" cellspacing="20">
             <tr>
-                <td class="offer"><a href=""><div><img src="./images/Salto.El.Limon.offer.jpg" alt=""></div></a></td>
-                <td class="offer"><a href=""><div><img src="./images/Bahia.de.las.aguilas.offer.jpg" alt=""></div></a></td>
-                <td class="offer"><a href=""><div><img src="./images/Los.Haitises.Offer.jpg" alt=""></div></a></td>
+                <td class="offer"><a href="javascript:void(0);"><div><img src="./images/Salto.El.Limon.offer.jpg" alt=""></div></a></td>
+                <td class="offer"><a href="javascript:void(0);"><div><img src="./images/Bahia.de.las.aguilas.offer.jpg" alt=""></div></a></td>
+                <td class="offer"><a href="javascript:void(0);"><div><img src="./images/Los.Haitises.Offer.jpg" alt=""></div></a></td>
             </tr>
             <tr>
                 <td class="offer"><a href=""><div><img src="./images/China.jpg" alt=""></div></a></td>
