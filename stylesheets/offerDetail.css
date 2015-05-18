@@ -11,3 +11,7 @@
 #flexible-div{
     display: flex;
 }
+#conteneur-info{
+    background: black;
+    height: 100%;
+}
