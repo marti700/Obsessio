@@ -1,7 +1,13 @@
 .offer-detail{
+    font-size: 30px;
     color: white;
 }
 #conteneur-image, #offre-resume{
-    float: left;
     margin-right: 3%;
+}
+#offre-details{
+    padding-top: 2%;
+}
+#flexible-div{
+    display: flex;
 }
