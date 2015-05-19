@@ -21,6 +21,7 @@
 }
 #offers-container > h1{
     margin-left: 45.6%;
+    color: white;
 }
 #offers-container{
     background: url("../images/back3.png") no-repeat;
