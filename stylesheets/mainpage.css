@@ -1,0 +1,42 @@
+#offers-table {
+    background-color: transparent;
+    border-spacing: 2px;
+    margin-left: 20%;
+    width: 55%;
+}
+
+.offer{
+	padding: 30px;
+    width: 10px;
+}
+.page-header > h1 > strong {
+    font-size: 175%;
+}
+.page-header{
+    color: white;
+    background: #3A5795;
+    margin: 31px 0px 0px;
+    border-bottom: 1px solid #54AAEB;
+    padding-left: 15%;
+}
+#offers-container > h1{
+    margin-left: 45.6%;
+}
+#offers-container{
+    background: url("../images/back3.png") no-repeat;
+    height: 100%;
+}
+.thumbnail{
+    box-shadow: 10px 10px 5px #1F1F1F;
+}
+#carousel-example-generic{
+    width:100%;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #DDE4FC;
+}
+.navbar-default{
+    background: #3A5795;
+    border-color: transparent;
+    font-size: 180%;
+}

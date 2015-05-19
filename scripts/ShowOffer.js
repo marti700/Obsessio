@@ -1,4 +1,16 @@
-$(document).ready(function(){
+$(window).ready(function(){
+    $('.thumbnail', this).hover(function(){
+        eWidth = parseInt($(this).css('width').match(/\d/g).join(""));
+        eWidth += 2;
+        var stylesin = {width: eWidth.toString(), height: "+2%"};
+        //eWidth = $(this).css('width').match(/\d/g).join(""));
+        $(this).css(stylesin);
+    },function(){
+        eWidth = parseInt($(this).css('width').match(/\d/g).join(""));
+        eWidth -= 2;
+        var stylesout = {width: eWidth.toString(), height: "-2%"};
+        $(this).css(stylesout);
+    });
     $('td', this).click(function(){
         console.log(this);
         //ajouté l'information a la lightbox

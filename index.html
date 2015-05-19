@@ -6,89 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>La Voyage Agence</title>
+
     <link href="./bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./stylesheets/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/mainpage.css">
+
     <script src="./scripts/jquery-1.11.3.min.js"></script>
     <script src = ./bootstrap-3.3.4-dist/js/bootstrap.min.js></script>
     <script src= "./scripts/ShowOffer.js"></script>
 </head>
 <body>
-
+I   <!-- NAVAR-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Obsessio</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Transport</a></li>
+                    <li><a href="">vols</a></li>
+                    <li><a href="">hôtels</a></li>
+                    <li><a href="">Propos</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--PAGE HEADER-->
     <div class="page-header">
-        <h1> La meilleure agence de Voyage </h1>
+        <h1> <strong> Obsessio </strong> </h1>
+        <h3> La meilleure agence de Voyage </h3>
     </div>
 
     <!--CAROUSEL-->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel", style="height:90%;width:58%;margin-left:17%">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
+    <div id="carousel-container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-      <!-- WRAPPER FOR SLIDES -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="./images/Salto.El.Limon1.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
+          <!-- WRAPPER FOR SLIDES -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./images/Salto.El.Limon2.jpg" alt="...">
+            </div>
+            <!-- Los haitises-->
+            <div class="item">
+              <img src="./images/Los.Haitises2.jpeg" alt="...">
+            </div>
+            <!-- Bahia de las Aguilas-->
+            <div class="item">
+              <img src="./images/Bahia.De.Las.Aguilas2.jpg" alt="...">
+            </div>
           </div>
-        </div>
-        <!-- Los haitises-->
-        <div class="item">
-          <img src="./images/Los.Haitises1.jpeg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
-        <!-- Bahia de las Aguilas-->
-        <div class="item">
-          <img src="./images/Bahia.De.Las.Aguilas1.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
 
-        ...
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
     </div>
-
-
     <!-- OFFERS-->
-   <h1>Nos offres</h1>
 
     <div id="lightbox-container" hidden>
         <object width="400" height="400" id="embedded-content"></object>
     </div>
 
     <div id="offers-container">
-        <table id="offers-table" cellspacing="20">
+        <h1>Nos offres</h1>
+        <table id="offers-table">
             <tr>
-                <td class="offer" call="elimon.html"><a href="javascript:void(0);"><div><img src="./images/Salto.El.Limon.offer.jpg" alt=""></div></a></td>
-                <td class="offer" call="Bahia.De.Las.Aguilas.html"><a href="javascript:void(0);"><div><img src="./images/Bahia.de.las.aguilas.offer.jpg" alt=""></div></a></td>
-                <td class="offer" call="Los.Haitises.html"><a href="javascript:void(0);"><div><img src="./images/Los.Haitises.Offer.jpg" alt=""></div></a></td>
+                <td class="offer" call="elimon.html"><a href="javascript:void(0);"><div><img class="thumbnail" src="./images/Salto.El.Limon.offer.jpg" alt=""></div></a></td>
+                <td class="offer" call="Bahia.De.Las.Aguilas.html"><a href="javascript:void(0);"><div>
+                            <img class="thumbnail" src="./images/Bahia.de.las.aguilas.offer.jpg" alt="">
+                </div></a></td>
+
+                <td class="offer" call="Los.Haitises.html"><a href="javascript:void(0);"><div><img class="thumbnail" src="./images/Los.Haitises.Offer.jpg" alt=""></div></a></td>
             </tr>
             <tr>
-                <td class="offer"><a href=""><div><img src="./images/China.jpg" alt=""></div></a></td>
-                <td class="offer"><a href=""><div><img src="./images/Cancun.jpg" alt=""></div></a></td>
-                <td class="offer"><a href=""><div><img src="./images/Alaska.jpg" alt=""></div></a></td>
+                <td class="offer"><a href=""><div><img class="thumbnail" src="./images/China.jpg" alt=""></div></a></td>
+                <td class="offer"><a href=""><div><img class="thumbnail" src="./images/Cancun.jpg" alt=""></div></a></td>
+                <td class="offer"><a href=""><div><img class="thumbnail" src="./images/Alaska.jpg" alt=""></div></a></td>
             </tr>
             <tr>
-                <td class="offer"><a href=""><div><img src="./images/Japon.jpg" alt=""></div></a></td>
-                <td class="offer"><a href=""><div><img src="./images/Dubai.jpg" alt=""></div></a></td>
-                <td class="offer"><a href=""><div><img src="./images/Acapulco.jpg" alt=""></div></a></td>
+                <td class="offer"><a href=""><div><img class="thumbnail" src="./images/Japon.jpg" alt=""></div></a></td>
+                <td class="offer"><a href=""><div><img class="thumbnail" src="./images/Dubai.jpg" alt=""></div></a></td>
+                <td class="offer"><a href=""><div><img class="thumbnail" src="./images/Acapulco.jpg" alt=""></div></a></td>
             </tr>
         </table>
     </div>
